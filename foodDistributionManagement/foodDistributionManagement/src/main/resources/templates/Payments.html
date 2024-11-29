@@ -84,15 +84,16 @@
                         <td th:text="${order.O_Date}"></td>
                         <td th:text="${order.Amount}"></td>
                         <td><button type="button"
-                            class="btn custom-green-button edit-button">Credited</button></td>
+                            class="btn custom-red-button edit-button">Debited</button></td>
+                        
                     </tr>
                     <tr th:each="delivery : ${deliveries}" class="show-buttons">
                         <td th:text="${delivery.D_ID}"></td>
                         <td th:text="${delivery.D_Date}"></td>
                         <td th:text="${delivery.Amount}"></td>
                         <td><button type="button"
-                            class="btn custom-red-button edit-button">Debited</button></td>
-                        </button></td>
+                            class="btn custom-green-button edit-button">Credited</button></td>
+                        
                     </tr>
                 </tbody>
             </table>
